@@ -14,12 +14,26 @@ let basemap = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.pn
 
 // Function to add place markers to the map
 let placeMarkers = L.layerGroup().addTo(map)
-function addPins() {
+function updatePins() {
+
+    // Remove all places from the map, to start fresh
     placeMarkers.clearLayers();
 
-    for (const place of codedPlaces) {
+    // Get the list of tags that have been checked by the user
+    let requiredTags = $('input.tag-filter:checked').map(function() { return $(this).val() })
+
+    // This function returns true if the given place has all tags selected by the user
+    function placeFilter(place) {
+        for (const requiredTag of requiredTags) {
+            if (!place.tags[requiredTag]) return false
+        }
+        return true
+    }
+
+    // Add each place to the map that satisfies our filter
+    for (const place of codedPlaces.filter(placeFilter)) {
         L.marker(place.coords)
-            .addTo(map)
+            .addTo(placeMarkers)
             .bindTooltip(place.name)
             .bindPopup(
               `
@@ -42,6 +56,12 @@ function addPins() {
 // Load coded place data, and put markers on the map
 let codedPlaces = null
 $.getJSON(PLACE_DATA_FILE_PATH, function(json) {
-    codedPlaces = json;
-    addPins()
+    codedPlaces = json
+    updatePins()
+})
+
+
+// Update pins when the user selects tags
+$('input.tag-filter').change(() => {
+  updatePins()
 })
