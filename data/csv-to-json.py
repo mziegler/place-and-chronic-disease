@@ -17,7 +17,7 @@ with open('places-coded-1.csv') as csvfile:
 
         newplace['name'] = line['name']
 
-        newplace['coords'] = [float(c) for c in line['coords'].split(',')]
+        newplace['coords'] = [float(c) for c in line['coords'].split(',')][::-1]
 
         newplace['tags'] = {
             attribute : True
