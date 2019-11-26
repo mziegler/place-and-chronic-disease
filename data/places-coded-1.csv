@@ -1,0 +1,42 @@
+name,coords,restrooms,food,water,comfortable seating,frequent seating,can lie down or recline,quiet spaces,temperature regulation,no chemical scents,views of nature,people watching,sun,shade,low traffic,open space,private or enclosed spaces,movable tables and chairs,wheelchair access,smooth surfaces,hill or stairs,obvious obstacles
+Starbucks,"-122.313383,47.65822",y,y,y,n,y,n,y,y,n,n,y,y,y,n,y,n,y,y,n,n,n
+Sizzle&Crunch Vietnamese Grill,"-122.3136459,47.6582075",y,y,y,n,y,n,n,y,y,n,y,y,y,y,n,n,n,y,y,n,n
+Little Thai Restaurant,"-122.3138873,47.6582127",y,y,y,y,y,y,n,y,y,n,y,n,y,y,n,y,n,n,y,y,n
+Boba Up,"-122.3134031,47.6580784",y,y,y,y,y,y,n,y,y,n,n,n,y,n,n,n,y,y,y,y,n
+Jimmy John's,"-122.3134661,47.6580478",y,y,y,n,y,n,n,y,n,n,y,y,y,n,y,n,y,y,n,y,n
+Aladdin Gyro-Cery & Deli,"-122.3133667,47.6580049",y,y,y,y,y,y,n,y,y,n,y,n,y,n,y,n,y,y,y,n,n
+Chicglet,"-122.3134971,47.6579363",y,y,y,n,y,n,n,y,n,n,y,y,y,n,n,y,y,y,n,n,n
+Big Time Brewery & Alehouse,"-122.313492,47.657851",y,y,y,y: nice wood chairs,y,y,n,y,y,n,y,y,y,n,y,n,y,y,y,n,n
+the BoB,"-122.3135161,47.6577819",y,y,y,y,y,n,n,y,y,n,y,y,y,n,n,n,y,y,n,y:little hill,n
+Pho Thy Thy,"-122.3135077,47.6577459",y,y,y,n,y,n,n,y,n,n,y,y,y,n,n,y,y,y,y,y,n
+University Teriyaki and Bakery,"-122.3129511,47.6571911",y,y,y,y,y,y,n,y,y,n,y,y,y,n,y,n,y,y,n,n,n
+Shultzy's Bar & Grill,"-122.3129689,47.657288",y,y,y,n,y,y,n,y,y,n,y,y,y,n,n,y,y,y,y,n,n
+Cafe Solstice,"-122.31296,47.657407",y,y,y,y,y,n,y,y,y,n,y,y,y,n,y,y,y,y,y,n,n
+DupBop Asian Fusion,"-122.3131447,47.6575564",y,y,y,y,y,y,n,y,y,n,y,y,y,y,y,y,y,n,n,y: 3 stairs,y: narrow entrance
+Samurai Noodle,"-122.3130778,47.657989",y,y,y,n,y,n,n,y,n,n,y,y,y,n,y,n,y,y,y,n,n
+Burger and Kabob Hut,"-122.313059,47.658166",n,y,y,n,y,n,n,y,n,n,y,y,y,n,n,n,y,y,n,y: small hill,n
+Moana Poke Shop,"-122.313014,47.658208",y,y,y,y,y,"y: a few booths, casual atmosphere",y,y,y,n,y,y,y,n,n,y,n,y,n,n,n
+Orange King,"-122.312767,47.658204",y,y,y,n,y,n,n,y,y,n,y,y,y,y,n,n,y,y,y,n,n
+Magus Books,"-122.312699,47.658436",n,n,n,n,n,n,y,y,y,n,y,n,y,y,n,y,y,n: narrow aisles with stepstools and boxes in the way,y,n,y: stepstools and boxes blocking aisles
+Professional Copy 'n' Print,"-122.3129887,47.6584485",n,n,n,y,n,n,y,y,n,n,n,y,y,n,y,n,n,y: mostly; there is one small raised area with a step up,n,n,
+Bulldog News,"-122.3130705,47.6585451",n,y,y,y,n,n,n,y,y,n,y,y,y,n,y,n,n,y,n,n,n
+The Block,"-122.3129045,47.658789",y,y,y,n,y,n,n,y,y,n,n,n,y,n,n,n,y,y,n,y: little slope,n
+Jai Thai on the Ave,"-122.3128628,47.6587803",y,y,y,y,y,n,n,y,y,n,n,n,y,n,n,n,y,y,y,n,n
+H Mart,"-122.3128643,47.6588898",n,y,y,n,n,n,n,n,y,n,y,n,y,n,n,n,n,y: some narrow aisles,y,n,n
+Chili's South Indian Cuisine,"-122.3129292,47.6589742",y,y,y,y,y,n,n,y,y,n,n,y,y,n,n,n,y,y,n: carpeted,y,n
+Sultan Gyros Grill,"-122.3129035,47.6590237",y,y,y,y,y,n,n,y,y,n,n,n,y,n,n,n,y,y,y,y: little ramp,n
+7-Eleven,"-122.3130196,47.6590874",n,y,y,n,n,n,n,y,n,n,n,n,n: flourescent lighting,n,n,n,n,y,n,n,n
+Thanh Vi,"-122.3128986,47.6591327",y,y,y,y,y,n,n,y,y,n,y,n,y,n,n,n,n,y,n,n,n
+Thaiger Room,"-122.3128495,47.6591959",y,y,y,y,y,n,n,y,y,n,y,y,y,n,n,n,y,y,y,n,n
+Noodle Nation,"-122.3130003,47.6592963",y,y,y,n,y,y: benches,n,y,y,n,y,y,y,n,y,n,y,y,n,y: little ramp,n
+A Burger Place,"-122.3127675,47.6593023",y,y,y,y,y,n,n,y,y,n,y,n,y,n,n,n,y,y,y,n,n
+Flowers Bar & Restaurant,"-122.3133757,47.6596712",y,y,y,y,y,n,n,y,y,n,y,y,n,n,y,y,y,y,y,y: small ramp,n
+China First,"-122.313422,47.6594176",y,y,y,y,y,y,n,y,y,n,y,y,y,n,y,n,y,y,y,y: ramp,n
+Pho Shizzle,"-122.3134032,47.6593456",y,y,y,n,y,y: a couple benches,n,y,y,n,y,y,y,n,n,n,y,y,n,n,n
+Chipotle Mexican Grill,"-122.3134022,47.6592399",y,y,y,y,y,y,n,y,n,n,y,y,y,n,y,n,y,y,y,n,n
+BB's Teriyaki Grill,"-122.3135166,47.6589834",y,y,y,n,y,n,n,y,n,n,n,y,y,n,y,n,y,y,y,y: small ramp,n
+Finn MacCool’s Irish Public House,"-122.31339,47.658867",y,y,y,y,y,y,n,y,y,n,y,y,y,n,n,y: enclosed booths,n,y,n,y: ramp,n
+Subway,"-122.3133856,47.6588062",y,y,y,n,y,y: booths,n,y,n,n,n,y,y,n,y,n,n,y,n,y: ramp,n
+Byrek & Baguette,"-122.3134706,47.6586746",y,y,y,y,y,y: two couches,y,y,y,y: lots of plants,y,y,y,n,y,y,y,y,y,y: small ramp,n
+Pho Than Brothers,"-122.3133669,47.6585501",y,y,y,n,y,n,n,y,y,n,y,y,y,n,y,n,y,y: narrow door,y,n,y
+Cafe on the Ave.,"-122.3134756,47.6584494",y,y,y,y,y,y,n,y,y,n,y,y,y,n,y,n,y,y,y,y,n
