@@ -2,6 +2,50 @@
 const PLACE_DATA_FILE_PATH = 'data/placecoding-round2-outdoor.json'
 
 
+const ALL_TAGS_GROUPED = [
+  [
+    "restrooms",
+    "accessible restrooms",
+    "single stall restrooms",
+    "food",
+    "water"
+  ],
+  [
+    "comfortable seating",
+    "frequent seating",
+    "seating along paths",
+    "can lie down",
+    "benches",
+    "lawn"
+  ],
+  [
+    "wheelchair access",
+    "wide path",
+    "smooth surfaces",
+    "navigable without hills",
+    "navigable without stairs"
+  ],
+  [
+    "views of nature",
+    "views of water",
+    "sun",
+    "shade",
+  ],
+  [
+    "low vehicle traffic",
+    "low pedestrian traffic",
+    "private/enclosed spaces",
+    "quiet spaces",
+  ],
+  [
+    "people watching",
+    "open space",
+    "movable tables/chairs",
+    "seating in groups"
+  ]
+]
+
+
 let map = L.map('map').setView([47.6509113, -122.3057678], 16)
 
 // Background layer
@@ -10,6 +54,7 @@ let basemap = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.pn
     minZoom: 1,
     maxZoom: 19
 }).addTo(map)
+
 
 
 // Function to add place markers to the map
@@ -35,29 +80,84 @@ function updatePins() {
         L.marker(place.coords)
             .addTo(placeMarkers)
             .bindTooltip(place.name)
-            .bindPopup(
-              `
-              <h3>${place.name}</h3>
-              <ul>
-                ${
-                  Object.keys(place.tags).map((tag,i) => `
-                    <li>${tag}</li>
-                  `).join('')
-                }
-              </ul>
-              `,
-              {className: 'place-popup'}
-            )
+            .on('click', () => $(`#place-modal-${place.id}`).modal('show'))
 
     }
 }
 
+
+
+
+
+// Generate modals for each place
+function generateModals() {
+  for (const place of codedPlaces) {
+    $('body').append(`
+      <div class="modal fade" id="place-modal-${place.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">${place.name}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <ul class="place-tags">
+                ${
+                  ALL_TAGS_GROUPED.map((tag_group, i) => `
+                    <li>
+                        ${
+                          tag_group.map((tag,i) => `
+                            ${
+                              `<span class="badge ${(tag in place.tags) ? 'badge-yes' : 'badge-no' }">
+                                <span class="sr-only">${(tag in place.tags) ? 'yes' : 'no' }</span>
+                                ${(tag in place.tags) ? '&#10004;' : '&times;' }
+                                ${tag}
+                              </span>`
+                            }
+                          `).join('')
+                        }
+
+                        <ul>
+                          ${
+                            tag_group.map((tag,i) =>
+                              (tag in place.comments) ? `<li>${place.comments[tag]}</li>` : ''
+                            ).join('')
+                          }
+                        </ul>
+
+
+                    </li>
+                  `).join('')
+
+                }
+              </ul>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `)
+  }
+}
+
+
+
+//Object.keys(place.tags).map((tag,i) => `
+//  <li>${tag}</li>
+//`).join('')
 
 // Load coded place data, and put markers on the map
 let codedPlaces = null
 $.getJSON(PLACE_DATA_FILE_PATH, function(json) {
     codedPlaces = json
     updatePins()
+    generateModals()
 })
 
 

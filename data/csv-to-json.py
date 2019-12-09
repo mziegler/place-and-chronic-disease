@@ -15,21 +15,31 @@ with open('placecoding-round2-outdoor.csv') as csvfile:
 
         newplace = {}
 
+        newplace['id'] = len(places)
+
         newplace['name'] = line['name']
 
         newplace['coords'] = [float(c) for c in line['coords'].split(',')][::-1]
 
         newplace['tags'] = {
-            attribute : (value.split(':')[1].strip() if (':' in value) else True)
+            attribute : True
             for attribute, value in line.items()
             if attribute not in ['place', 'coords'] and value.lower().startswith('y')
         }
 
+        """
         newplace['comments'] = [
             value.split(':')[1].strip()
             for attribute, value in line.items()
             if ':' in value
-        ]
+        ] # (value.split(':')[1].strip() if (':' in value) else True)
+        """
+
+        newplace['comments'] = {
+            attribute : value.split(':')[1].strip()
+            for attribute, value in line.items()
+            if attribute not in ['place', 'coords'] and (':' in value)
+        }
 
         places.append(newplace)
 

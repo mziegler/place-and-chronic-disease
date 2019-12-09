@@ -36,14 +36,90 @@
         border-top: 3px solid grey;
       }
 
+      .modal-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+
+      ul.place-tags {
+        padding-left: 0;
+      }
+
+      ul.place-tags li {
+        font-size: 130%;
+        list-style-type: none;
+        border-top: solid 1px #CCC;
+        padding: 0.2em 0em;
+      }
+
+
+
+      .badge-yes {
+        background-color: lightgreen;
+      }
+
       #map {
         height: 100%;
       }
+
+
   </style>
 
 
 </head>
 <body>
+
+
+  <div class="modal fade" id="modal-comfortable-seating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Comfortable seating</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Lie Down.jpg" class="modal-image">
+        <div class="modal-body">
+          Comfortable seating is personal, but we looked for places that have:
+          <ul>
+            <li>Benches or wide seats</li>
+            <li>With backrests</li>
+            <li>Usually made of a soft material like wood or plastic</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-frequent-seating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Frequent seating</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Frequent Seating.jpg" class="modal-image">
+        <div class="modal-body">
+          Frequent seating: you can quickly get to a seat from most areas, for whenever you want to sit.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
   <div class="container-fluid" style="padding:0; height:100%">
     <div class="row" style="height:100%">
@@ -67,14 +143,16 @@
             </li>
             <li class="list-group-item list-section-start">
               <label style="display:block" class="float-left"><input type="checkbox" value="comfortable seating" class="tag-filter">Comfortable seating</label>
-              <a tabindex="0" class="info-button float-right" role="button" data-toggle="popover" data-trigger="focus" data-placement="right"
-                data-content="And here's some amazing content. It's very engaging. Right?">Info</a>
+              <!--<a tabindex="0" class="info-button float-right" role="button" data-toggle="popover" data-trigger="focus" data-placement="right"
+                data-content="And here's some amazing content. It's very engaging. Right?">Info</a>-->
+                <a class="float-right" data-toggle="modal" data-target="#modal-comfortable-seating" role="button">info</a>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="frequent seating" class="tag-filter">Frequent seating</label>
+              <label style="display:block; float:left"><input type="checkbox" value="frequent seating" class="tag-filter">Frequent seating</label>
+              <a class="float-right" data-toggle="modal" data-target="#modal-frequent-seating" role="button">info</a>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="seating along paths" class="tag-filter">Seating along paths</label>
+              <label style="display:block; margin-left:1em"><input type="checkbox" value="seating along paths" class="tag-filter">Seating along paths</label>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="can lie down" class="tag-filter">Can lie down</label>
@@ -95,10 +173,10 @@
               <label style="display:block"><input type="checkbox" value="smooth surfaces" class="tag-filter">Smooth surfaces</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="level / no hills" class="tag-filter">Level / no hills</label>
+              <label style="display:block"><input type="checkbox" value="navigable without hills" class="tag-filter">Navigable without hills</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="no stairs required" class="tag-filter">No stairs required</label>
+              <label style="display:block"><input type="checkbox" value="navigable without stairs" class="tag-filter">Navigable without stairs</label>
             </li>
             <li class="list-group-item list-section-start">
               <label style="display:block"><input type="checkbox" value="views of nature" class="tag-filter">Views of nature</label>
@@ -134,7 +212,7 @@
               <label style="display:block"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="centripetal seating" class="tag-filter">Centripetal seating</label>
+              <label style="display:block"><input type="checkbox" value="seating in groups" class="tag-filter">Seating in groups</label>
             </li>
           </ul>
 
@@ -150,7 +228,7 @@
 
   <script>
   $(function () {
-    $('[data-toggle="popover"]').popover({container: 'body'})
+    $('[data-toggle="popover"]').popover({container: 'body'}  )
   })
   </script>
 
