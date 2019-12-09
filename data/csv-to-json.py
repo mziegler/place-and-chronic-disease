@@ -7,7 +7,7 @@ import json
 
 places = []
 
-with open('places-coded-1.csv') as csvfile:
+with open('placecoding-round2-outdoor.csv') as csvfile:
     reader = DictReader(csvfile)
     reader_list = list(reader) #dump into dict so we can use it twice
 
@@ -20,7 +20,7 @@ with open('places-coded-1.csv') as csvfile:
         newplace['coords'] = [float(c) for c in line['coords'].split(',')][::-1]
 
         newplace['tags'] = {
-            attribute : True
+            attribute : (value.split(':')[1].strip() if (':' in value) else True)
             for attribute, value in line.items()
             if attribute not in ['place', 'coords'] and value.lower().startswith('y')
         }
@@ -34,5 +34,5 @@ with open('places-coded-1.csv') as csvfile:
         places.append(newplace)
 
 
-with open('places-coded-1.json', 'w') as fout:
+with open('placecoding-round2-outdoor.json', 'w') as fout:
     json.dump(places, fout, indent=4, sort_keys=True)

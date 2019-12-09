@@ -1,0 +1,326 @@
+[
+    {
+        "comments": [
+            "On most of Rainier Vista, buildings are not so close.",
+            "A couple places with concrete benches",
+            "Big concrete benches",
+            "Path is paved on lower portion, but gravel on upper part",
+            "Can see Mt. Rainier",
+            "Fountain",
+            "Some distant noise from the road"
+        ],
+        "coords": [
+            47.6522065,
+            -122.3066641
+        ],
+        "name": "Rainier vista",
+        "tags": {
+            "benches": "Big concrete benches",
+            "can lie down": true,
+            "lawn": true,
+            "low vehicle traffic": "Some distant noise from the road",
+            "open space": true,
+            "people watching": true,
+            "relaxed social atmosphere": true,
+            "sun": true,
+            "views of nature": "Can see Mt. Rainier",
+            "views of water": "Fountain",
+            "wheelchair access": true,
+            "wide path": true
+        }
+    },
+    {
+        "comments": [
+            "concrete and metal benches",
+            "The metal benches have dividers so you can't lie down, but there are a couple wide concrete ones.",
+            "Brick floor; most parts are in good level condition but some pots have jagged edges",
+            "Mt. Rainier on clear days",
+            "Busy streets",
+            "Loud traffic"
+        ],
+        "coords": [
+            47.6509113,
+            122.3057678
+        ],
+        "name": "Montlake Triangle",
+        "tags": {
+            "benches": "The metal benches have dividers so you can't lie down, but there are a couple wide concrete ones.",
+            "can lie down": true,
+            "frequent seating": true,
+            "lawn": true,
+            "open space": true,
+            "people watching": true,
+            "relaxed social atmosphere": true,
+            "seating along paths": true,
+            "sun": true,
+            "views of nature": "Mt. Rainier on clear days",
+            "wheelchair access": true,
+            "wide path": true
+        }
+    },
+    {
+        "comments": [
+            "Shell house builing is only sometimes open for events. There are wide porta-potties outside the shellhouse",
+            "Shell house builing is only sometimes open for events. There are wide porta-potties outside the shellhouse",
+            "Wide porta-potties",
+            "Nice wooden benches",
+            "Docks",
+            "Paved paths throughout, but with rough conditions in some spots",
+            "Paved paths throughout, but with rough conditions in some spots",
+            "Steep hill to get down to water",
+            "some highway noise"
+        ],
+        "coords": [
+            47.6477751,
+            -122.3000739
+        ],
+        "name": "ASUW Shellhouse",
+        "tags": {
+            "benches": true,
+            "can lie down": "Docks",
+            "comfortable seating": "Nice wooden benches",
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "quiet spaces": "some highway noise",
+            "relaxed social atmosphere": true,
+            "restroom": "Shell house builing is only sometimes open for events. There are wide porta-potties outside the shellhouse",
+            "shade": true,
+            "single stall": "Wide porta-potties",
+            "smooth surfaces": "Paved paths throughout, but with rough conditions in some spots",
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "wheelchair access": "Paved paths throughout, but with rough conditions in some spots",
+            "wide path": true
+        }
+    },
+    {
+        "comments": [
+            "Far from buildings",
+            "some nice benches",
+            "benches are sparse",
+            "Benches are sparse",
+            "Dirt paths, many in rough condition",
+            "Dirth paths, many in rough condition"
+        ],
+        "coords": [
+            47.65666,
+            -122.294192
+        ],
+        "name": "Union Bay Natural Area",
+        "tags": {
+            "comfortable seating": "some nice benches",
+            "level - no hills": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "relaxed social atmosphere": true,
+            "shade": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true
+        }
+    },
+    {
+        "comments": [
+            "picnic tables",
+            "bike path",
+            "Adjacent to high-traffic roads",
+            "Bike path",
+            "Traffic noise"
+        ],
+        "coords": [
+            47.653927,
+            -122.3142285
+        ],
+        "name": "Little bike path park",
+        "tags": {
+            "centripetal seating": true,
+            "frequent seating": true,
+            "lawn": true,
+            "open space": true,
+            "shade": true,
+            "smooth surfaces": "bike path",
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true,
+            "wide path": true
+        }
+    },
+    {
+        "comments": [
+            "Lots of nearby buildings accessable from paths",
+            "Adjacent Oceanography building has a single-stall bathroom on 1st floor.",
+            "A coulpe concrete benches",
+            "Enclosed wooden ring with a bench inside"
+        ],
+        "coords": [
+            47.6521352,
+            -122.3120543
+        ],
+        "name": "Portage Bay Vista",
+        "tags": {
+            "accessable": true,
+            "benches": true,
+            "can lie down": true,
+            "lawn": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": "Enclosed wooden ring with a bench inside",
+            "restroom": "Lots of nearby buildings accessable from paths",
+            "single stall": "Adjacent Oceanography building has a single-stall bathroom on 1st floor.",
+            "smooth surfaces": true,
+            "sun": true,
+            "views of water": true,
+            "wheelchair access": true,
+            "wide path": true
+        }
+    },
+    {
+        "comments": [
+            "Agua verde has restrooms for customers",
+            "For Agua Verde customers",
+            "Benches too short to lie down",
+            "Accessable paths currently under construction",
+            "Some distant highway noise"
+        ],
+        "coords": [
+            47.6516729,
+            -122.3148894
+        ],
+        "name": "Sakuma Viewpoint",
+        "tags": {
+            "accessable": true,
+            "centripetal seating": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": "Some distant highway noise",
+            "relaxed social atmosphere": true,
+            "seating along paths": true,
+            "shade": true,
+            "single stall": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "water": "For Agua Verde customers",
+            "wheelchair access": "Accessable paths currently under construction",
+            "wide path": true
+        }
+    },
+    {
+        "comments": [
+            "double check",
+            "Wood and soft plastic benches with backs",
+            "Wheelchair-accessable path to the water from the patio is inconvenient. You have to go out through the front of the building and then around to the back.",
+            "Big steep hill to get to the water.",
+            "Long steep stairway to reach the water. The accessable path is pretty inconvenient and out-of-the-way.",
+            "Distant traffic noise",
+            "Open space on a hill",
+            "There are a few nice areas with benches tucked into trees, but they are difficult to access with a walker or wheelchair."
+        ],
+        "coords": [
+            47.6495089,
+            -122.3107975
+        ],
+        "name": "South Campus Center",
+        "tags": {
+            "accessable": true,
+            "benches": true,
+            "can lie down": true,
+            "centripetal seating": true,
+            "comfortable seating": "Wood and soft plastic benches with backs",
+            "food": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "no stairs required": "Long steep stairway to reach the water. The accessable path is pretty inconvenient and out-of-the-way.",
+            "open space": "Open space on a hill",
+            "people watching": true,
+            "private/enclosed spaces": "There are a few nice areas with benches tucked into trees, but they are difficult to access with a walker or wheelchair.",
+            "quiet spaces": "Distant traffic noise",
+            "relaxed social atmosphere": true,
+            "restroom": true,
+            "seating along paths": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "water": true,
+            "wheelchair access": "Wheelchair-accessable path to the water from the patio is inconvenient. You have to go out through the front of the building and then around to the back.",
+            "wide path": true
+        }
+    },
+    {
+        "comments": [
+            "Hospital facilities are not so easy to get to from the back lawn",
+            "Wood benches, with and without backrests",
+            "Benches are sparse",
+            "Dirt and gravel paths, in rough condition",
+            "Dirt and gravel paths, in rough condition"
+        ],
+        "coords": [
+            47.6478067,
+            -122.3086745
+        ],
+        "name": "Lawn behind hospital",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "comfortable seating": "Wood benches, with and without backrests",
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "open space": true,
+            "quiet spaces": true,
+            "relaxed social atmosphere": true,
+            "shade": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true
+        }
+    },
+    {
+        "comments": [
+            "Concrete benches without backrests",
+            "Lawn often has goose poop",
+            "Mt. Rainier on clear days"
+        ],
+        "coords": [
+            47.6538254,
+            -122.3078057
+        ],
+        "name": "Drumheller Fountain",
+        "tags": {
+            "accessable": true,
+            "benches": true,
+            "can lie down": true,
+            "food": true,
+            "frequent seating": true,
+            "lawn": "Lawn often has goose poop",
+            "level - no hills": true,
+            "low vehicle traffic": true,
+            "open space": true,
+            "people watching": true,
+            "relaxed social atmosphere": true,
+            "restroom": true,
+            "seating along paths": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": "Mt. Rainier on clear days",
+            "views of water": true,
+            "water": true,
+            "wheelchair access": true,
+            "wide path": true
+        }
+    }
+]

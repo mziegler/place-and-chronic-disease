@@ -20,6 +20,22 @@
   <style type="text/css">
 
 
+      #filter-list li.list-group-item {
+        padding: .4rem 1.25rem
+      }
+
+      #filter-list li.list-group-item input {
+        margin-right: .5rem
+      }
+
+      #filter-list li.list-group-item label {
+        margin-bottom: 0;
+      }
+
+      #filter-list li.list-group-item.list-section-start {
+        border-top: 3px solid grey;
+      }
+
       #map {
         height: 100%;
       }
@@ -31,18 +47,97 @@
 
   <div class="container-fluid" style="padding:0; height:100%">
     <div class="row" style="height:100%">
-      <div class="col-md-3">
-        <script type="text/javascript">
+      <div class="col-md-3" style="height:100%;overflow:auto">
 
-          const DISPLAY_TAGS = ['restrooms','food','water','comfortable seating','frequent seating','can lie down or recline','quiet spaces','temperature regulation','no chemical scents','views of nature','people watching','sun','shade','low traffic','open space','private or enclosed spaces','movable tables and chairs','wheelchair access','smooth surfaces','hill or stairs','obvious obstacles']
+          <ul class="list-group list-group-flush" id="filter-list">
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="restrooms" class="tag-filter">Restrooms</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; margin-left:1em"><input type="checkbox" value="accessable restrooms" class="tag-filter">accessible</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; margin-left:1em"><input type="checkbox" value="single stall restrooms" class="tag-filter">single stall</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="food" class="tag-filter">Food available</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="water" class="tag-filter">Water available</label>
+            </li>
+            <li class="list-group-item list-section-start">
+              <label style="display:block" class="float-left"><input type="checkbox" value="comfortable seating" class="tag-filter">Comfortable seating</label>
+              <a tabindex="0" class="info-button float-right" role="button" data-toggle="popover" data-trigger="focus" data-placement="right"
+                data-content="And here's some amazing content. It's very engaging. Right?">Info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="frequent seating" class="tag-filter">Frequent seating</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="seating along paths" class="tag-filter">Seating along paths</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="can lie down" class="tag-filter">Can lie down</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; margin-left:1em"><input type="checkbox" value="benches" class="tag-filter">Benches</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; margin-left:1em"><input type="checkbox" value="lawn" class="tag-filter">Lawn</label>
+            </li>
+            <li class="list-group-item list-section-start">
+              <label style="display:block"><input type="checkbox" value="wheelchair access" class="tag-filter">Wheelchair access</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; margin-left:1em"><input type="checkbox" value="wide paths" class="tag-filter">wide paths</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="smooth surfaces" class="tag-filter">Smooth surfaces</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="level / no hills" class="tag-filter">Level / no hills</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="no stairs required" class="tag-filter">No stairs required</label>
+            </li>
+            <li class="list-group-item list-section-start">
+              <label style="display:block"><input type="checkbox" value="views of nature" class="tag-filter">Views of nature</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="views of water" class="tag-filter">Views of water</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="sun" class="tag-filter">Options for sun</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="shade" class="tag-filter">Options for shade</label>
+            </li>
+            <li class="list-group-item list-section-start">
+              <label style="display:block"><input type="checkbox" value="low vehicle traffic" class="tag-filter">Low vehicle traffic</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="low pedestrian traffic" class="tag-filter">Low pedestrian traffic</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="private/enclosed spaces" class="tag-filter">Private / enclosed spaces</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="quiet spaces" class="tag-filter">Quiet spaces</label>
+            </li>
+            <li class="list-group-item list-section-start">
+              <label style="display:block"><input type="checkbox" value="people watching" class="tag-filter">People watching</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="open space" class="tag-filter">Open flexible space</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="centripetal seating" class="tag-filter">Centripetal seating</label>
+            </li>
+          </ul>
 
-          document.write(
-              DISPLAY_TAGS.map((tag,i) => `
-                  <label style="display:block"><input type="checkbox" value="${tag}" class="tag-filter"> ${tag}</label>
-              `).join('')
-          )
-
-        </script>
       </div>
       <div class="col-md-9" style="padding:0">
         <div id="map"></div>
@@ -52,6 +147,12 @@
 
 
   <script src="map.js"></script>
+
+  <script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({container: 'body'})
+  })
+  </script>
 
 </body>
 </html>

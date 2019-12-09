@@ -1,8 +1,8 @@
 // Path to the CSV file with coded place data
-const PLACE_DATA_FILE_PATH = 'data/places-coded-1.json'
+const PLACE_DATA_FILE_PATH = 'data/placecoding-round2-outdoor.json'
 
 
-let map = L.map('map').setView([ 47.65822,-122.313383], 17)
+let map = L.map('map').setView([47.6509113, -122.3057678], 16)
 
 // Background layer
 let basemap = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
