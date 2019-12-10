@@ -49,12 +49,16 @@ const ALL_TAGS_GROUPED = [
 let map = L.map('map').setView([47.6509113, -122.3057678], 16)
 
 // Background layer
-let basemap = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
-    attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
-    minZoom: 1,
-    maxZoom: 19
-}).addTo(map)
+//let basemap = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
+//    attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
+//    minZoom: 1,
+//    maxZoom: 19
+//}).addTo(map)
 
+
+let basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+}).addTo(map)
 
 
 // Function to add place markers to the map
