@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
 
   <!-- jQuery -->
@@ -72,6 +72,49 @@
 <body>
 
 
+  <div class="modal fade" id="modal-restrooms" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Restrooms</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          We looked for restrooms that are either:
+          <ul>
+            <li>At the location</li>
+            <li>Nearby (in a building)</li>
+            <li>Within a few minutes away</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-single-stall-restrooms" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Single-Stall Restrooms</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          To locate single-stall restrooms, we used the list of <a href="https://depts.washington.edu/qcenter/wordpress/gender-neutral-bathrooms/">Gender-Neutral Bathrooms on the UW campus</a>.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="modal-comfortable-seating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -81,7 +124,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <img src="img/Lie Down.jpg" class="modal-image">
+        <img src="img/Lie Down.jpg" class="modal-image" alt="People laying on wooden chairs that are flat">
         <div class="modal-body">
           Comfortable seating is personal, but we looked for places that have:
           <ul>
@@ -106,9 +149,83 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <img src="img/Frequent Seating.jpg" class="modal-image">
+        <img src="img/Frequent Seating.jpg" class="modal-image" alt="A pathway with continous benches along the side">
         <div class="modal-body">
           Frequent seating: you can quickly get to a seat from most areas, for whenever you want to sit.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-can-lie-down" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Can lie down</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Lie Down2.jpg" class="modal-image" alt="Chairs that lay flat in a plaza">
+        <div class="modal-body">
+          We looked for:
+          <ul>
+            <li>Benches long enough to lie down on</li>
+            <li>Open grassy areas</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-smooth-surfaces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Smooth surfaces</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Smooth surface.jpg" class="modal-image" alt="A flat paved pathway with grassy areas and trees on each side.">
+        <div class="modal-body">
+          We looked for places <strong>without</strong>:
+          <ul>
+            <li>Extremely bumpy sidewalks</li>
+            <li>Gravel</li>
+            <li>Dirt</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-views-of-nature" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Views of nature</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Views of Nature.jpg" class="modal-image" alt="A small park with views of plants, trees, and a bridge.">
+        <div class="modal-body">
+          We looked for places with views of:
+          <ul>
+            <li>Trees</li>
+            <li>Plants</li>
+            <li>Other nature scenery</li>
+          </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -127,13 +244,15 @@
 
           <ul class="list-group list-group-flush" id="filter-list">
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="restrooms" class="tag-filter">Restrooms</label>
+              <label style="display:block" class="float-left"><input type="checkbox" value="restrooms" class="tag-filter">Restrooms</label>
+              <a href="" class="float-right" data-toggle="modal" data-target="#modal-restrooms" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em"><input type="checkbox" value="accessable restrooms" class="tag-filter">accessible</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block; margin-left:1em"><input type="checkbox" value="single stall restrooms" class="tag-filter">single stall</label>
+              <label style="display:block; margin-left:1em" class="float-left"><input type="checkbox" value="single stall restrooms" class="tag-filter">single stall</label>
+              <a href="" class="float-right" data-toggle="modal" data-target="#modal-single-stall-restrooms" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="food" class="tag-filter">Food available</label>
@@ -145,17 +264,18 @@
               <label style="display:block" class="float-left"><input type="checkbox" value="comfortable seating" class="tag-filter">Comfortable seating</label>
               <!--<a tabindex="0" class="info-button float-right" role="button" data-toggle="popover" data-trigger="focus" data-placement="right"
                 data-content="And here's some amazing content. It's very engaging. Right?">Info</a>-->
-                <a class="float-right" data-toggle="modal" data-target="#modal-comfortable-seating" role="button">info</a>
+                <a href="" class="float-right" data-toggle="modal" data-target="#modal-comfortable-seating" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; float:left"><input type="checkbox" value="frequent seating" class="tag-filter">Frequent seating</label>
-              <a class="float-right" data-toggle="modal" data-target="#modal-frequent-seating" role="button">info</a>
+              <a href="" class="float-right" data-toggle="modal" data-target="#modal-frequent-seating" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em"><input type="checkbox" value="seating along paths" class="tag-filter">Seating along paths</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="can lie down" class="tag-filter">Can lie down</label>
+              <label style="display:block" class="float-left"><input type="checkbox" value="can lie down" class="tag-filter">Can lie down</label>
+              <a href="" class="float-right" data-toggle="modal" data-target="#modal-can-lie-down" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em"><input type="checkbox" value="benches" class="tag-filter">Benches</label>
@@ -170,7 +290,8 @@
               <label style="display:block; margin-left:1em"><input type="checkbox" value="wide paths" class="tag-filter">wide paths</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="smooth surfaces" class="tag-filter">Smooth surfaces</label>
+              <label style="display:block" class="float-left"><input type="checkbox" value="smooth surfaces" class="tag-filter">Smooth surfaces</label>
+              <a href="" class="float-right" data-toggle="modal" data-target="#modal-smooth-surfaces" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="navigable without hills" class="tag-filter">Navigable without hills</label>
@@ -179,7 +300,8 @@
               <label style="display:block"><input type="checkbox" value="navigable without stairs" class="tag-filter">Navigable without stairs</label>
             </li>
             <li class="list-group-item list-section-start">
-              <label style="display:block"><input type="checkbox" value="views of nature" class="tag-filter">Views of nature</label>
+              <label style="display:block" class="float-left"><input type="checkbox" value="views of nature" class="tag-filter">Views of nature</label>
+              <a href="" class="float-right" data-toggle="modal" data-target="#modal-views-of-nature" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="views of water" class="tag-filter">Views of water</label>
