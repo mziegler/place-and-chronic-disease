@@ -21,22 +21,24 @@ with open('placecoding-round2-outdoor.csv') as csvfile:
 
         newplace['coords'] = [float(c) for c in line['coords'].split(',')][::-1]
 
+        newplace['google_id'] = line['google id']
+
         newplace['tags'] = {
             attribute : True
             for attribute, value in line.items()
-            if attribute not in ['place', 'coords'] and value.lower().startswith('y')
+            if attribute not in ['place', 'coords', 'google id'] and value.lower().startswith('y')
         }
 
         newplace['unsure'] = {
             attribute : True
             for attribute, value in line.items()
-            if attribute not in ['place', 'coords'] and value.lower().startswith('?')
+            if attribute not in ['place', 'coords', 'google id'] and value.lower().startswith('?')
         }
 
         newplace['comments'] = {
             attribute : value.split(':')[1].strip()
             for attribute, value in line.items()
-            if attribute not in ['place', 'coords'] and (':' in value)
+            if attribute not in ['place', 'coords', 'google id'] and (':' in value)
         }
 
         places.append(newplace)
