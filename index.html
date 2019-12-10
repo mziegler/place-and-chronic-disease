@@ -71,6 +71,33 @@
         background-color: #DDD;
       }
 
+
+      .info-button {
+        float: right;
+        text-indent: -9999px;
+        display: block;
+        background-image: url('img/info.png');
+        background-size: contain;
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      .info-button:hover {
+        opacity:0.5;
+      }
+
+
+      .photo-button {
+        float: right;
+        text-indent: -9999px;
+        display: block;
+        background-image: url('img/photo.png');
+        background-size: contain;
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+
       #map {
         height: 100%;
       }
@@ -245,6 +272,73 @@
     </div>
   </div>
 
+  <div class="modal fade" id="modal-quiet-spaces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Quiet spaces</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Quiet space.JPG" class="modal-image" alt="A secluded bench tucked behind a bush">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-private-enclosed-spaces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Private / enclosed spaces</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Enclosed Spaces.jpg" class="modal-image" alt="Ivy-covered walls enclosing an outdoor cafe">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-low-vehicle-traffic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Low traffic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Low Traffic.jpg" class="modal-image" alt="A public residential street without cars">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-moveable-chairs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Moveable tables and chairs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Moveable Chairs.jpg" class="modal-image" alt="An urban park with metal movable tables and chairs">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -256,14 +350,14 @@
           <ul class="list-group list-group-flush" id="filter-list">
             <li class="list-group-item">
               <label style="display:block" class="float-left"><input type="checkbox" value="restrooms" class="tag-filter">Restrooms</label>
-              <a href="" class="float-right" data-toggle="modal" data-target="#modal-restrooms" role="button">info</a>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-restrooms" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em"><input type="checkbox" value="accessable restrooms" class="tag-filter">accessible</label>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em" class="float-left"><input type="checkbox" value="single stall restrooms" class="tag-filter">single stall</label>
-              <a href="" class="float-right" data-toggle="modal" data-target="#modal-single-stall-restrooms" role="button">info</a>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-single-stall-restrooms" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="food" class="tag-filter">Food available</label>
@@ -275,18 +369,18 @@
               <label style="display:block" class="float-left"><input type="checkbox" value="comfortable seating" class="tag-filter">Comfortable seating</label>
               <!--<a tabindex="0" class="info-button float-right" role="button" data-toggle="popover" data-trigger="focus" data-placement="right"
                 data-content="And here's some amazing content. It's very engaging. Right?">Info</a>-->
-                <a href="" class="float-right" data-toggle="modal" data-target="#modal-comfortable-seating" role="button">info</a>
+                <a href="" class="info-button" data-toggle="modal" data-target="#modal-comfortable-seating" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; float:left"><input type="checkbox" value="frequent seating" class="tag-filter">Frequent seating</label>
-              <a href="" class="float-right" data-toggle="modal" data-target="#modal-frequent-seating" role="button">info</a>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-frequent-seating" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em"><input type="checkbox" value="seating along paths" class="tag-filter">Seating along paths</label>
             </li>
             <li class="list-group-item">
               <label style="display:block" class="float-left"><input type="checkbox" value="can lie down" class="tag-filter">Can lie down</label>
-              <a href="" class="float-right" data-toggle="modal" data-target="#modal-can-lie-down" role="button">info</a>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-can-lie-down" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em"><input type="checkbox" value="benches" class="tag-filter">Benches</label>
@@ -302,7 +396,7 @@
             </li>
             <li class="list-group-item">
               <label style="display:block" class="float-left"><input type="checkbox" value="smooth surfaces" class="tag-filter">Smooth surfaces</label>
-              <a href="" class="float-right" data-toggle="modal" data-target="#modal-smooth-surfaces" role="button">info</a>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-smooth-surfaces" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="navigable without hills" class="tag-filter">Navigable without hills</label>
@@ -312,7 +406,7 @@
             </li>
             <li class="list-group-item list-section-start">
               <label style="display:block" class="float-left"><input type="checkbox" value="views of nature" class="tag-filter">Views of nature</label>
-              <a href="" class="float-right" data-toggle="modal" data-target="#modal-views-of-nature" role="button">info</a>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-views-of-nature" role="button">info</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="views of water" class="tag-filter">Views of water</label>
@@ -324,16 +418,19 @@
               <label style="display:block"><input type="checkbox" value="shade" class="tag-filter">Options for shade</label>
             </li>
             <li class="list-group-item list-section-start">
-              <label style="display:block"><input type="checkbox" value="low vehicle traffic" class="tag-filter">Low vehicle traffic</label>
+              <label style="display:block; float:left"><input type="checkbox" value="low vehicle traffic" class="tag-filter">Low vehicle traffic</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-low-vehicle-traffic" role="button">photo</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="low pedestrian traffic" class="tag-filter">Low pedestrian traffic</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="private/enclosed spaces" class="tag-filter">Private / enclosed spaces</label>
+              <label style="display:block; float:left"><input type="checkbox" value="private/enclosed spaces" class="tag-filter">Private / enclosed spaces</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-private-enclosed-spaces" role="button">photo</a>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="quiet spaces" class="tag-filter">Quiet spaces</label>
+              <label style="display:block; float:left"><input type="checkbox" value="quiet spaces" class="tag-filter">Quiet spaces</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-quiet-spaces" role="button">photo</a>
             </li>
             <li class="list-group-item list-section-start">
               <label style="display:block"><input type="checkbox" value="people watching" class="tag-filter">People watching</label>
@@ -342,7 +439,8 @@
               <label style="display:block"><input type="checkbox" value="open space" class="tag-filter">Open flexible space</label>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
+              <label style="display:block; margin-left:1em; float:left"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-moveable-chairs" role="button">photo</a>
             </li>
             <li class="list-group-item">
               <label style="display:block"><input type="checkbox" value="seating in groups" class="tag-filter">Seating in groups</label>
