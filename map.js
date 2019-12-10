@@ -46,7 +46,7 @@ const ALL_TAGS_GROUPED = [
 ]
 
 
-let map = L.map('map').setView([47.6509113, -122.3057678], 16)
+let map = L.map('map').setView([47.652734,-122.30631], 16)
 
 // Background layer
 //let basemap = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
@@ -57,7 +57,7 @@ let map = L.map('map').setView([47.6509113, -122.3057678], 16)
 
 
 let basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+	attribution: 'Esri'
 }).addTo(map)
 
 
