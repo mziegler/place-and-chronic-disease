@@ -84,10 +84,7 @@ function updatePins() {
         L.marker(place.coords)
             .addTo(placeMarkers)
             .bindTooltip(place.name)
-            .on('click', () => {
-              $(`#place-modal-${place.id}`).modal('show')
-              loadGooglePlace(place)
-            })
+            .on('click', () => $(`#place-modal-${place.id}`).modal('show'))
     }
 }
 
@@ -95,8 +92,7 @@ function updatePins() {
 
 
 
-// Generate modals for each place.
-// Called after codedPlaces are loaded.
+// Generate modals for each place
 function generateModals() {
   for (const place of codedPlaces) {
     $('body').append(`
@@ -109,9 +105,6 @@ function generateModals() {
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-
-            <div class="googlemaps-info emtpy"></div>
-
             <div class="modal-body">
 
               <ul class="place-tags">
@@ -163,27 +156,6 @@ function generateModals() {
   }
 }
 
-
-function loadGooglePlace(place) {
-  if (place.google_id && !$(`#place-modal-${place.id} div.googlemaps-info`).hasClass('empty')) {
-
-    let placesService = new google.maps.places.PlacesService(document.createElement('div'));
-    placesService.getDetails({ placeId: place.google_id }, (googleplace, googlestatus) => {
-      if (googlestatus === google.maps.places.PlacesServiceStatus.OK) {
-        $(`#place-modal-${place.id} div.googlemaps-info`)
-        .removeClass('empty')
-        .html(`
-
-          ${googleplace.formatted_address}
-          <a href="${googleplace.map}" target="_blank">View on Google Maps</a>
-        `)
-      }
-      else {
-        console.log('something bad happened with google API', googlestatus, googleplace)
-      }
-    })
-  }
-}
 
 
 //Object.keys(place.tags).map((tag,i) => `
