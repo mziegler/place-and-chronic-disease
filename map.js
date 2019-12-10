@@ -93,7 +93,7 @@ function generateModals() {
   for (const place of codedPlaces) {
     $('body').append(`
       <div class="modal fade" id="place-modal-${place.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalCenterTitle">${place.name}</h5>
@@ -106,13 +106,13 @@ function generateModals() {
               <ul class="place-tags">
                 ${
                   ALL_TAGS_GROUPED.map((tag_group, i) => `
-                    <li>
+                    <li class="tag-group">
                         ${
                           tag_group.map((tag,i) => `
                             ${
-                              `<span class="badge ${(tag in place.tags) ? 'badge-yes' : 'badge-no' }">
-                                <span class="sr-only">${(tag in place.tags) ? 'yes' : 'no' }</span>
-                                ${(tag in place.tags) ? '&#10004;' : '&times;' }
+                              `<span class="badge ${(tag in place.tags) ? 'badge-yes' : (tag in place.unsure ? 'badge-unsure' : 'badge-no') }">
+                                <span class="sr-only">${(tag in place.tags) ? 'yes' : (tag in place.unsure ? 'unsure' : 'no') }</span>
+                                ${(tag in place.tags) ? '&#10004;' : (tag in place.unsure ? '?' : '&times;') }
                                 ${tag}
                               </span>`
                             }
@@ -122,7 +122,14 @@ function generateModals() {
                         <ul>
                           ${
                             tag_group.map((tag,i) =>
-                              (tag in place.comments) ? `<li>${place.comments[tag]}</li>` : ''
+                              (tag in place.comments) ?
+                                `<li class="comment">
+                                  <span class="sr-only">${(tag in place.tags) ? 'yes' : (tag in place.unsure ? 'unsure' : 'no') }</span>
+                                  ${(tag in place.tags) ? '&#10004;' : (tag in place.unsure ? '?' : '&times;') }
+                                  <i>${tag}:</i>
+                                  ${place.comments[tag]}
+                                </li>`
+                                : ''
                             ).join('')
                           }
                         </ul>

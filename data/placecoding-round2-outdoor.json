@@ -27,6 +27,9 @@
             "views of water": true, 
             "wheelchair access": true, 
             "wide path": true
+        }, 
+        "unsure": {
+            "restrooms": true
         }
     }, 
     {
@@ -56,7 +59,8 @@
             "views of nature": true, 
             "wheelchair access": true, 
             "wide path": true
-        }
+        }, 
+        "unsure": {}
     }, 
     {
         "comments": {
@@ -90,6 +94,12 @@
             "views of nature": true, 
             "views of water": true, 
             "wide path": true
+        }, 
+        "unsure": {
+            "accessible restrooms": true, 
+            "restrooms": true, 
+            "single stall restrooms": true, 
+            "wheelchair access": true
         }
     }, 
     {
@@ -118,7 +128,8 @@
             "sun": true, 
             "views of nature": true, 
             "views of water": true
-        }
+        }, 
+        "unsure": {}
     }, 
     {
         "comments": {
@@ -145,7 +156,8 @@
             "views of nature": true, 
             "wheelchair access": true, 
             "wide path": true
-        }
+        }, 
+        "unsure": {}
     }, 
     {
         "comments": {
@@ -175,7 +187,8 @@
             "views of water": true, 
             "wheelchair access": true, 
             "wide path": true
-        }
+        }, 
+        "unsure": {}
     }, 
     {
         "comments": {
@@ -210,6 +223,10 @@
             "views of water": true, 
             "water": true, 
             "wide path": true
+        }, 
+        "unsure": {
+            "quiet spaces": true, 
+            "wheelchair access": true
         }
     }, 
     {
@@ -253,6 +270,11 @@
             "views of nature": true, 
             "views of water": true, 
             "water": true
+        }, 
+        "unsure": {
+            "navigable without stairs": true, 
+            "wheelchair access": true, 
+            "wide path": true
         }
     }, 
     {
@@ -282,6 +304,9 @@
             "sun": true, 
             "views of nature": true, 
             "views of water": true
+        }, 
+        "unsure": {
+            "restrooms": true
         }
     }, 
     {
@@ -317,6 +342,9 @@
             "water": true, 
             "wheelchair access": true, 
             "wide path": true
+        }, 
+        "unsure": {
+            "quiet spaces": true
         }
     }, 
     {
@@ -352,6 +380,9 @@
             "sun": true, 
             "views of nature": true, 
             "wheelchair access": true
+        }, 
+        "unsure": {
+            "accessible restrooms": true
         }
     }, 
     {
@@ -387,7 +418,8 @@
             "water": true, 
             "wheelchair access": true, 
             "wide path": true
-        }
+        }, 
+        "unsure": {}
     }, 
     {
         "comments": {
@@ -418,7 +450,8 @@
             "sun": true, 
             "views of nature": true, 
             "wheelchair access": true
-        }
+        }, 
+        "unsure": {}
     }, 
     {
         "comments": {
@@ -449,7 +482,8 @@
             "sun": true, 
             "views of nature": true, 
             "wheelchair access": true
-        }
+        }, 
+        "unsure": {}
     }, 
     {
         "comments": {
@@ -475,6 +509,7 @@
             "sun": true, 
             "views of nature": true, 
             "wide path": true
-        }
+        }, 
+        "unsure": {}
     }
 ]

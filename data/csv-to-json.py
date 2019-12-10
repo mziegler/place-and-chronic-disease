@@ -27,13 +27,11 @@ with open('placecoding-round2-outdoor.csv') as csvfile:
             if attribute not in ['place', 'coords'] and value.lower().startswith('y')
         }
 
-        """
-        newplace['comments'] = [
-            value.split(':')[1].strip()
+        newplace['unsure'] = {
+            attribute : True
             for attribute, value in line.items()
-            if ':' in value
-        ] # (value.split(':')[1].strip() if (':' in value) else True)
-        """
+            if attribute not in ['place', 'coords'] and value.lower().startswith('?')
+        }
 
         newplace['comments'] = {
             attribute : value.split(':')[1].strip()
