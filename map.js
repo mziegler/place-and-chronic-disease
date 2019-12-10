@@ -81,7 +81,6 @@ function updatePins() {
             .addTo(placeMarkers)
             .bindTooltip(place.name)
             .on('click', () => $(`#place-modal-${place.id}`).modal('show'))
-
     }
 }
 
