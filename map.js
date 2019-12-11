@@ -116,7 +116,7 @@ function generateModals() {
                             ${
                               `<span class="badge ${(tag in place.tags) ? 'badge-yes' : (tag in place.unsure ? 'badge-unsure' : 'badge-no') }">
                                 <span class="sr-only">${(tag in place.tags) ? 'yes' : (tag in place.unsure ? 'unsure' : 'no') }</span>
-                                ${(tag in place.tags) ? '&#10004;' : (tag in place.unsure ? '?' : '&times;') }
+                                ${(tag in place.tags) ? '&#10003;' : (tag in place.unsure ? '?' : '&times;') }
                                 ${tag}
                               </span>`
                             }
@@ -129,7 +129,7 @@ function generateModals() {
                               (tag in place.comments) ?
                                 `<li class="comment">
                                   <span class="sr-only">${(tag in place.tags) ? 'yes' : (tag in place.unsure ? 'unsure' : 'no') }</span>
-                                  ${(tag in place.tags) ? '&#10004;' : (tag in place.unsure ? '?' : '&times;') }
+                                  ${(tag in place.tags) ? '&#10003;' : (tag in place.unsure ? '?' : '&times;') }
                                   <i>${tag}:</i>
                                   ${place.comments[tag]}
                                 </li>`
