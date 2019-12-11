@@ -3,46 +3,63 @@ const PLACE_DATA_FILE_PATH = 'data/placecoding-round2-outdoor.json'
 
 
 const ALL_TAGS_GROUPED = [
-  [
-    "restrooms",
-    "accessible restrooms",
-    "single stall restrooms",
-    "food",
-    "water"
-  ],
-  [
-    "comfortable seating",
-    "frequent seating",
-    "seating along paths",
-    "can lie down",
-    "benches",
-    "lawn"
-  ],
-  [
-    "wheelchair access",
-    "wide path",
-    "smooth surfaces",
-    "navigable without hills",
-    "navigable without stairs"
-  ],
-  [
-    "views of nature",
-    "views of water",
-    "sun",
-    "shade",
-  ],
-  [
-    "low vehicle traffic",
-    "low pedestrian traffic",
-    "private/enclosed spaces",
-    "quiet spaces",
-  ],
-  [
-    "people watching",
-    "open space",
-    "movable tables/chairs",
-    "seating in groups"
-  ]
+  {
+    "groupname": "Amenities",
+    "tags": [
+      "restrooms",
+      "accessible restrooms",
+      "single stall restrooms",
+      "food",
+      "water"
+    ],
+  },
+
+  {
+    "groupname": "Navigation",
+    "tags": [
+      "wheelchair access",
+      "wide path",
+      "smooth surfaces",
+      "frequent seating",
+      "seating along paths",
+      "navigable without hills",
+      "navigable without stairs"
+    ],
+  },
+
+  {
+    "groupname": "Social",
+    "tags": [
+      "people watching",
+      "open space",
+      "movable tables/chairs",
+      "seating in groups"
+    ],
+  },
+
+  {
+    "groupname": "Resting",
+    "tags": [
+      "low vehicle traffic",
+      "low pedestrian traffic",
+      "private/enclosed spaces",
+      "quiet spaces",
+      "comfortable seating",
+      "can lie down",
+      "benches",
+      "lawn"
+    ],
+  },
+
+  {
+    "groupname": "Nature",
+    "tags": [
+      "views of nature",
+      "views of water",
+      "sun",
+      "shade",
+    ],
+  },
 ]
 
 
@@ -99,22 +116,24 @@ function generateModals() {
       <div class="modal fade" id="place-modal-${place.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">${place.name}</h5>
+            <div class="modal-header modal-place-header">
+              <h5 class="modal-title modal-place-title">${place.name}</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
 
-              <ul class="place-tags">
+              <div class="container-flexible place-tags ">
                 ${
                   ALL_TAGS_GROUPED.map((tag_group, i) => `
-                    <li class="tag-group">
+                    <div class="row place-tags-group">
+                        <div class="col-md-2" style="text-align:right">${tag_group.groupname}</div>
+                        <div class="col-md-10">
                         ${
-                          tag_group.map((tag,i) => `
+                          tag_group.tags.map((tag,i) => `
                             ${
-                              `<span class="badge ${(tag in place.tags) ? 'badge-yes' : (tag in place.unsure ? 'badge-unsure' : 'badge-no') }">
+                              `<span class="badge badge-place-tag ${(tag in place.tags) ? 'badge-yes' : (tag in place.unsure ? 'badge-unsure' : 'badge-no') }">
                                 <span class="sr-only">${(tag in place.tags) ? 'yes' : (tag in place.unsure ? 'unsure' : 'no') }</span>
                                 ${(tag in place.tags) ? '&#10003;' : (tag in place.unsure ? '?' : '&times;') }
                                 ${tag}
@@ -123,11 +142,11 @@ function generateModals() {
                           `).join('')
                         }
 
-                        <ul>
+                        <ul class="place-comments">
                           ${
-                            tag_group.map((tag,i) =>
+                            tag_group.tags.map((tag,i) =>
                               (tag in place.comments) ?
-                                `<li class="comment">
+                                `<li class="place-comment">
                                   <span class="sr-only">${(tag in place.tags) ? 'yes' : (tag in place.unsure ? 'unsure' : 'no') }</span>
                                   ${(tag in place.tags) ? '&#10003;' : (tag in place.unsure ? '?' : '&times;') }
                                   <i>${tag}:</i>
@@ -137,13 +156,14 @@ function generateModals() {
                             ).join('')
                           }
                         </ul>
+                        </div>
 
 
-                    </li>
+                    </div>
                   `).join('')
 
                 }
-              </ul>
+              </div>
 
             </div>
             <div class="modal-footer">

@@ -44,23 +44,35 @@
         height: auto;
       }
 
-
-      ul.place-tags {
-        padding-left: 0;
+      .modal-title.modal-place-title {
+        font-size: 200%
       }
 
-      ul.place-tags li.tag-group {
-        font-size: 130%;
-        list-style-type: none;
-        padding: 1em 0;
+      .modal-header.modal-place-header {
+        border-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      .modal-header.modal-place-header h5{
+        margin-left: 1em;
       }
 
-      ul.place-tags li.comment {
-        font-size: 70%;
-        list-style: disc;
+      .row.place-tags-group {
+        margin-bottom:1em;
       }
 
+      div.place-tags ul.place-comments {
+        padding-left:0;
+      }
 
+      div.place-tags li.place-comment {
+        list-style: none;
+      }
+
+      .badge.badge-place-tag {
+        font-size: 115%;
+        margin-bottom: 2px;
+      }
 
       .badge-yes {
         background-color: #9eddf0;
@@ -424,7 +436,7 @@
 
   <div class="container-fluid" style="padding:0; height:100%">
     <div class="row" style="height:100%">
-      <div class="col-md-3" style="height:100%;overflow:auto;">
+      <div class="col-md-2" style="height:100%;overflow:auto;">
 
           <div id="header">
             <h1 id="logo">[Dis]placed</h1>
@@ -482,6 +494,25 @@
             </li>
 
             <li class="list-group-item list-section-start">
+              <b>Social</b>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="people watching" class="tag-filter">People watching</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-people-watching" role="button">info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="open space" class="tag-filter">Open flexible space</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-open-space" role="button">photo</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; margin-left:1em; float:left"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-moveable-chairs" role="button">photo</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="seating in groups" class="tag-filter">Seating in groups</label>
+            </li>
+
+            <li class="list-group-item list-section-start">
               <b>Resting</b>
             </li>
             <li class="list-group-item">
@@ -512,25 +543,6 @@
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em"><input type="checkbox" value="lawn" class="tag-filter">Lawn</label>
-            </li>
-
-            <li class="list-group-item list-section-start">
-              <b>Social</b>
-            </li>
-            <li class="list-group-item">
-              <label style="display:block; float:left"><input type="checkbox" value="people watching" class="tag-filter">People watching</label>
-              <a href="" class="info-button" data-toggle="modal" data-target="#modal-people-watching" role="button">info</a>
-            </li>
-            <li class="list-group-item">
-              <label style="display:block; float:left"><input type="checkbox" value="open space" class="tag-filter">Open flexible space</label>
-              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-open-space" role="button">photo</a>
-            </li>
-            <li class="list-group-item">
-              <label style="display:block; margin-left:1em; float:left"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
-              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-moveable-chairs" role="button">photo</a>
-            </li>
-            <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="seating in groups" class="tag-filter">Seating in groups</label>
             </li>
 
             <li class="list-group-item list-section-start">
