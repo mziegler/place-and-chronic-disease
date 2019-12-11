@@ -54,7 +54,8 @@
       }
 
       ul.place-tags li.comment {
-        font-size: 70%
+        font-size: 70%;
+        list-style: disc;
       }
 
 
@@ -272,6 +273,26 @@
     </div>
   </div>
 
+  <div class="modal fade" id="modal-people-watching" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">People watching</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/People-Watching.jpg" class="modal-image" alt="A man sitting on a bench, watching a busy bike path.">
+        <div class="modal-body">
+          People watching: you can sit and passively watch a highly-used public space, without needing to interact with people. Like street, plaza, or playround.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="modal-quiet-spaces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -333,6 +354,23 @@
           </button>
         </div>
         <img src="img/Moveable Chairs.jpg" class="modal-image" alt="An urban park with metal movable tables and chairs">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-open-space" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Open flexible space</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Open space.jpg" class="modal-image" alt="An urban park with a big lawn, full of people">
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
@@ -433,10 +471,12 @@
               <a href="" class="photo-button" data-toggle="modal" data-target="#modal-quiet-spaces" role="button">photo</a>
             </li>
             <li class="list-group-item list-section-start">
-              <label style="display:block"><input type="checkbox" value="people watching" class="tag-filter">People watching</label>
+              <label style="display:block; float:left"><input type="checkbox" value="people watching" class="tag-filter">People watching</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-people-watching" role="button">info</a>
             </li>
             <li class="list-group-item">
-              <label style="display:block"><input type="checkbox" value="open space" class="tag-filter">Open flexible space</label>
+              <label style="display:block; float:left"><input type="checkbox" value="open space" class="tag-filter">Open flexible space</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-open-space" role="button">photo</a>
             </li>
             <li class="list-group-item">
               <label style="display:block; margin-left:1em; float:left"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
