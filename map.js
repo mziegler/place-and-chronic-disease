@@ -172,6 +172,8 @@ function generateModals() {
                 }
               </div>
 
+              <div class="google-reviews"></div>
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -190,13 +192,54 @@ function loadGooglePlace(place) {
     let placesService = new google.maps.places.PlacesService(document.createElement('div'));
     placesService.getDetails({ placeId: place.google_id }, (googleplace, googlestatus) => {
       if (googlestatus === google.maps.places.PlacesServiceStatus.OK) {
+
+
+//<img src="${photo.getUrl()}" class="d-block w-100" alt="${place.name}">
         $(`#place-modal-${place.id} div.googlemaps-info`)
         .removeClass('empty')
         .html(`
+          ${(googleplace.photos && googleplace.photos[0]) ? `
+            <div id="carousel-${place.id}" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                ${googleplace.photos.map((photo,i) => `
+                  <div class="carousel-item ${(i==0) ? 'active' : ''}">
+                    <div class="d-block w-100" alt="${place.name}"
+                      style="background-image:url('${photo.getUrl()}'); background-size:cover; background-position:center; height:300px; background-color: #DDD"></div>
+                  </div>
+                `)}
+              </div>
+              <a class="carousel-control-prev" href="#carousel-${place.id}" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-${place.id}" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          ` : ''}
 
-          ${googleplace.formatted_address}
-          <a href="${googleplace.map}" target="_blank">View on Google Maps</a>
+          <div style="text-align:center;padding-top:10px; padding-bottom:26px">
+            <a href="${googleplace.url}" target="_blank">View on Google Maps</a>
+          </div>
         `)
+
+        if (googleplace.reviews && googleplace.reviews[0]) {
+          $(`#place-modal-${place.id} div.google-reviews`)
+          .addClass('reviews-populated')
+          .html(`
+            <center><b>Reviews</b></center>
+            <ul>
+              ${
+                googleplace.reviews.map((review,i) =>
+                  (review.text) ? `<li>${review.text}</li>` : ''
+                ).join('')
+              }
+            </ul>
+            <center><a href="${googleplace.url}" target="_blank">See all on Google Maps</a></center>
+          `)
+        }
+
       }
       else {
         console.log('something bad happened with google API', googlestatus, googleplace)
