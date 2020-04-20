@@ -1,0 +1,579 @@
+<html lang="en">
+<head>
+
+  <title>[Dis]placed: navigating third-places and chronic illness</title>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Google places -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtC48W3eciNislGFA-yXU-awlmpcRDyac&libraries=places"></script>
+
+
+
+  <style type="text/css">
+
+      body {
+        overflow: hidden; /* for chrome flickering bug */
+        width: 100%
+        height: 100%
+      }
+
+      #filter-list li.list-group-item {
+        padding: .4rem 1.25rem
+      }
+
+      #filter-list li.list-group-item input {
+        margin-right: .5rem
+      }
+
+      #filter-list li.list-group-item label {
+        margin-bottom: 0;
+      }
+
+      #filter-list li.list-group-item.list-section-start {
+        border-top: 3px solid grey;
+      }
+
+      .modal-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .reviews-populated {
+        background-color: #EEE;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .modal-title.modal-place-title {
+        font-size: 200%
+      }
+
+      .modal-header.modal-place-header {
+        border-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      .modal-header.modal-place-header h5{
+        margin-left: 1em;
+      }
+
+      .row.place-tags-group {
+        margin-bottom:1em;
+      }
+
+      div.place-tags ul.place-comments {
+        padding-left:20px;
+      }
+
+      div.place-tags li.place-comment {
+        list-style: disc;
+      }
+
+      .badge.badge-place-tag {
+        font-size: 115%;
+        margin-bottom: 2px;
+      }
+
+      .badge-yes {
+        background-color: #9eddf0;
+      }
+
+      .badge-no {
+        background-color: #fba5a3;
+      }
+
+      .badge-unsure {
+        background-color: #DDD;
+      }
+
+
+      .info-button {
+        float: right;
+        text-indent: -9999px;
+        display: block;
+        background-image: url('img/info.png');
+        background-size: contain;
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      .info-button:hover {
+        opacity:0.5;
+      }
+
+
+      .photo-button {
+        float: right;
+        text-indent: -9999px;
+        display: block;
+        background-image: url('img/photo.png');
+        background-size: contain;
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      .photo-button:hover {
+        opacity:0.5;
+      }
+
+
+
+      #map {
+        height: 100%;
+      }
+
+
+
+      #header {
+        width: 100%;
+        text-align: center;
+        padding: 50px;
+      }
+
+      #header-info-button {
+        background-image: url('img/info.png');
+        background-repeat: no-repeat;
+        background-position: 0.5em 50%;
+        background-size: auto 70%;
+        padding-left: 3em;
+      }
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <div class="modal fade" id="modal-main-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">[Dis]placed</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>People experiencing chronic illness often are excluded from <i>third places</i> for relaxing and socializing outside of the workplace and home. Designs of public places often neglect important characteristics like: frequent seating, temperature control, and accessible restrooms. However, public places also provide healing elements like relaxation, socialization, and views of nature.</p>
+
+          <p>This map aims to help people navigate the experience of place and chronic illness, by showing which places have accessability problems and theraputic qualities. Since people living with chronic illnesses can have vastly different experiences, can we help users find places with the characteristics that are most important to them? It builds off of <a href="https://digital.lib.washington.edu/researchworks/handle/1773/42423" target="_blank">Sylvia Janicki's design principals for public places and chronic illness</a>, developed from interviews of people with chronic Lyme disease.</p>
+
+          <p>This is a class project for Jen Mankoff's <a href="https://make4all.org/portfolio/future-access-technology-2019/" target="_blank">Future of Access Technology</a> class at the University of Washington. Developed by Sylvia Janicki, Matt Ziegler, and Grady Thompson, with helpful input from Manaswi Saha, Jen Mankoff, and Kelly Mack.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-restrooms" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Restrooms</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          This map shows where public restrooms are close enough that you could access one in a couple minutes.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-single-stall-restrooms" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Single-Stall Restrooms</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          This page has a list of single-stall bathrooms on campus: <a href="https://depts.washington.edu/qcenter/wordpress/gender-neutral-bathrooms/" target="_blank">Gender-Neutral Bathrooms on the UW campus</a>.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-comfortable-seating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Comfortable seating</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Lie Down.jpg" class="modal-image" alt="People laying on wooden chairs that are flat">
+        <div class="modal-body">
+          Comfortable seating is personal, but we looked for places that have:
+          <ul>
+            <li>Benches or wide seats</li>
+            <li>With backrests</li>
+            <li>Usually made of a soft material like wood or plastic</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-frequent-seating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Frequent seating</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Frequent Seating.jpg" class="modal-image" alt="A pathway with continous benches along the side">
+        <div class="modal-body">
+          Frequent seating: you can quickly get to a seat from most areas, for whenever you want to sit.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-can-lie-down" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Can lie down</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Lie Down2.jpg" class="modal-image" alt="Chairs that lay flat in a plaza">
+        <div class="modal-body">
+          We looked for:
+          <ul>
+            <li>Benches long enough to lie down on</li>
+            <li>Open grassy areas</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-smooth-surfaces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Smooth surfaces</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Smooth surface.jpg" class="modal-image" alt="A flat paved pathway with grassy areas and trees on each side.">
+        <div class="modal-body">
+          Smooth surfaces can be particularly important for mobility devices like walkers. This map shows places navigable <strong>without</strong>:
+          <ul>
+            <li>Bumpy or jagged sidewalks</li>
+            <li>Gravel paths</li>
+            <li>Dirt paths</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-views-of-nature" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Views of nature</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Views of Nature.jpg" class="modal-image" alt="A small park with views of plants, trees, and a bridge.">
+        <div class="modal-body">
+          We looked for places with views of:
+          <ul>
+            <li>Trees</li>
+            <li>Plants</li>
+            <li>Other nature scenery</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-people-watching" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">People watching</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/People-Watching.jpg" class="modal-image" alt="A man sitting on a bench, watching a busy bike path.">
+        <div class="modal-body">
+          In good places for people watching, you can sit and passively watch a highly-used public space without needing to interact with people. Like street, plaza, or playround.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-quiet-spaces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Quiet spaces</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Quiet space.JPG" class="modal-image" alt="A secluded bench tucked behind a bush">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-private-enclosed-spaces" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Private / enclosed spaces</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Enclosed Spaces.jpg" class="modal-image" alt="Ivy-covered walls enclosing an outdoor cafe">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-low-vehicle-traffic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Low traffic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Low Traffic.jpg" class="modal-image" alt="A public residential street without cars">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-moveable-chairs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Moveable tables and chairs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Moveable Chairs.jpg" class="modal-image" alt="An urban park with metal movable tables and chairs">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-open-space" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Open flexible space</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img src="img/Open space.jpg" class="modal-image" alt="An urban park with a big lawn, full of people">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid" style="padding:0; height:100%">
+    <div class="row" style="height:100%">
+      <div class="col-md-3" style="height:100%;overflow:auto;">
+
+          <div id="header">
+            <h1 id="logo">[Dis]placed</h1>
+            <p>Navigating third-places and chronic illness</p>
+            <a class="btn btn-sm btn-outline-dark" data-toggle="modal" data-target="#modal-main-info">more information</a>
+          </div>
+
+          <ul class="list-group list-group-flush" id="filter-list" style="margin-bottom:50px;">
+            <li class="list-group-item list-section-start">
+              <b>Amenities</b>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block" class="float-left"><input type="checkbox" value="restrooms" class="tag-filter">Restrooms</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-restrooms" role="button">info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="food" class="tag-filter">Food available</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="water" class="tag-filter">Water available</label>
+            </li>
+
+            <li class="list-group-item list-section-start">
+              <b>Navigation</b>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="wheelchair access" class="tag-filter">Wheelchair access</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block" class="float-left"><input type="checkbox" value="smooth surfaces" class="tag-filter">Smooth surfaces</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-smooth-surfaces" role="button">info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="frequent seating" class="tag-filter">Frequent seating</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-frequent-seating" role="button">info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="navigable without stairs" class="tag-filter">Navigable without stairs</label>
+            </li>
+
+            <li class="list-group-item list-section-start">
+              <b>Social</b>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="people watching" class="tag-filter">People watching</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-people-watching" role="button">info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="open space" class="tag-filter">Open flexible space</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-open-space" role="button">photo</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; margin-left:1em; float:left"><input type="checkbox" value="movable tables/chairs" class="tag-filter">Movable tables / chairs</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-moveable-chairs" role="button">photo</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="seating in groups" class="tag-filter">Seating in groups</label>
+            </li>
+
+            <li class="list-group-item list-section-start">
+              <b>Resting</b>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="low vehicle traffic" class="tag-filter">Low vehicle traffic</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-low-vehicle-traffic" role="button">photo</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="low pedestrian traffic" class="tag-filter">Low pedestrian traffic</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="private/enclosed spaces" class="tag-filter">Private / enclosed spaces</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-private-enclosed-spaces" role="button">photo</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block; float:left"><input type="checkbox" value="quiet spaces" class="tag-filter">Quiet spaces</label>
+              <a href="" class="photo-button" data-toggle="modal" data-target="#modal-quiet-spaces" role="button">photo</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block" class="float-left"><input type="checkbox" value="comfortable seating" class="tag-filter">Comfortable seating</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-comfortable-seating" role="button">info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block" class="float-left"><input type="checkbox" value="can lie down" class="tag-filter">Can lie down</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-can-lie-down" role="button">info</a>
+            </li>
+
+            <li class="list-group-item list-section-start">
+              <b>Nature + climate</b>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block" class="float-left"><input type="checkbox" value="views of nature" class="tag-filter">Views of nature</label>
+              <a href="" class="info-button" data-toggle="modal" data-target="#modal-views-of-nature" role="button">info</a>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="views of water" class="tag-filter">Views of water</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="sun" class="tag-filter">Options for sun</label>
+            </li>
+            <li class="list-group-item">
+              <label style="display:block"><input type="checkbox" value="shade" class="tag-filter">Options for shade</label>
+            </li>
+          </ul>
+
+      </div>
+      <div class="col-md-9" style="padding:0">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="map-ave.js"></script>
+
+  <script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({container: 'body'}  )
+  })
+  </script>
+
+</body>
+</html>

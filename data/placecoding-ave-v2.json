@@ -1,0 +1,1065 @@
+[
+    {
+        "comments": {},
+        "coords": [
+            47.65822,
+            -122.313383
+        ],
+        "google_id": "ChIJm2i9WPMUkFQRQ8B_XnsrsTc",
+        "id": 0,
+        "name": "Starbucks",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6582075,
+            -122.3136459
+        ],
+        "google_id": "ChIJ98C7oPQUkFQR-RlbvbijjIs",
+        "id": 1,
+        "name": "Sizzle&Crunch Vietnamese Grill",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "low vehicle traffic": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6582127,
+            -122.3138873
+        ],
+        "google_id": "ChIJkQqon_QUkFQRrw8vixeqiVw",
+        "id": 2,
+        "name": "Little Thai Restaurant",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "low vehicle traffic": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "water": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6580784,
+            -122.3134031
+        ],
+        "google_id": "ChIJP56j_coVkFQRvYmtsrRIjfo",
+        "id": 3,
+        "name": "Boba Up",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "navigable without stairs": "has elevator"
+        },
+        "coords": [
+            47.6580478,
+            -122.3134661
+        ],
+        "google_id": "ChIJUZkrX_MUkFQRAPmNUl399FE",
+        "id": 4,
+        "name": "Jimmy John's",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6580049,
+            -122.3133667
+        ],
+        "google_id": "ChIJdzZGWfMUkFQRFZ1X8DaZstc",
+        "id": 5,
+        "name": "Aladdin Gyro-Cery & Deli",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6579363,
+            -122.3134971
+        ],
+        "google_id": "ChIJ1Yc-YusVkFQRgAJq_1kubQM",
+        "id": 6,
+        "name": "Chicglet",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "comfortable seating": "nice wood chairs"
+        },
+        "coords": [
+            47.657851,
+            -122.313492
+        ],
+        "google_id": "ChIJKaC2QvMUkFQRWVvn71SBmuY",
+        "id": 7,
+        "name": "Big Time Brewery & Alehouse",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6577819,
+            -122.3135161
+        ],
+        "google_id": "ChIJ7_EzXPMUkFQR64zEc7IZYOY",
+        "id": 8,
+        "name": "the BoB",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6577459,
+            -122.3135077
+        ],
+        "google_id": "ChIJ7zt1XfMUkFQRJo9fW3MUC7I",
+        "id": 9,
+        "name": "Pho Thy Thy",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6571911,
+            -122.3129511
+        ],
+        "google_id": "ChIJhUZ9avMUkFQRMrBooWA9Za8",
+        "id": 10,
+        "name": "University Teriyaki and Bakery",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.657288,
+            -122.3129689
+        ],
+        "google_id": "ChIJG_j0afMUkFQROPWTaerWo9E",
+        "id": 11,
+        "name": "Shultzy's Bar & Grill",
+        "tags": {
+            "can lie down": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.657407,
+            -122.31296
+        ],
+        "google_id": "ChIJaZE6QvMUkFQRXCfaq6_QnBE",
+        "id": 12,
+        "name": "Cafe Solstice",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "navigable without stairs": "3 steps up to door",
+            "wheelchair access": "narrow entrance"
+        },
+        "coords": [
+            47.6575564,
+            -122.3131447
+        ],
+        "google_id": "ChIJfaVRNqMVkFQRHDeifp9uxKU",
+        "id": 13,
+        "name": "DupBop Asian Fusion",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "low vehicle traffic": true,
+            "movable tables/chairs": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.657989,
+            -122.3130778
+        ],
+        "google_id": "ChIJxfk6WvMUkFQRQDavEWstOH4",
+        "id": 14,
+        "name": "Samurai Noodle",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.658166,
+            -122.313059
+        ],
+        "google_id": "ChIJv2ZXWPMUkFQRsz63otFDc6Q",
+        "id": 15,
+        "name": "Burger and Kabob Hut",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "can lie down": "a few booths, casual atmosphere"
+        },
+        "coords": [
+            47.658208,
+            -122.313014
+        ],
+        "google_id": "ChIJMbMvWPMUkFQR2fGAZHEKZvM",
+        "id": 16,
+        "name": "Moana Poke Shop",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.658204,
+            -122.312767
+        ],
+        "google_id": "ChIJa4GnV_MUkFQRnwQUlOvuAYU",
+        "id": 17,
+        "name": "Orange King",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "low vehicle traffic": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "wheelchair access": "narrow aisles with stepstools and boxes in the way"
+        },
+        "coords": [
+            47.658436,
+            -122.312699
+        ],
+        "google_id": "ChIJhz4ZVvMUkFQRyGev1ogtqXs",
+        "id": 18,
+        "name": "Magus Books",
+        "tags": {
+            "low vehicle traffic": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "shade": true,
+            "smooth surfaces": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "wheelchair access": "mostly; there is one small raised area with a step up"
+        },
+        "coords": [
+            47.6584485,
+            -122.3129887
+        ],
+        "google_id": "ChIJVVVVVVEUkFQRAKt8KH39nUY",
+        "id": 19,
+        "name": "Professional Copy 'n' Print",
+        "tags": {
+            "comfortable seating": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "quiet spaces": true,
+            "shade": true,
+            "sun": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6585451,
+            -122.3130705
+        ],
+        "google_id": "ChIJf99kqPQUkFQR18QQrQUcR6g",
+        "id": 20,
+        "name": "Bulldog News",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.658789,
+            -122.3129045
+        ],
+        "google_id": "ChIJR8U737UVkFQRQLPZ4vydm40",
+        "id": 21,
+        "name": "The Block",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6587803,
+            -122.3128628
+        ],
+        "google_id": "ChIJlb0bvasVkFQRQx_HWLAYGHY",
+        "id": 22,
+        "name": "Jai Thai on the Ave",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "wheelchair access": "some narrow aisles"
+        },
+        "coords": [
+            47.6588898,
+            -122.3128643
+        ],
+        "google_id": "ChIJe5f8rPQUkFQRSDaDuXJUcOQ",
+        "id": 23,
+        "name": "H Mart",
+        "tags": {
+            "food": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "smooth surfaces": "carpeted"
+        },
+        "coords": [
+            47.6589742,
+            -122.3129292
+        ],
+        "google_id": "ChIJCT0L62EUkFQR-TkjBGLltbk",
+        "id": 24,
+        "name": "Chili's South Indian Cuisine",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6590237,
+            -122.3129035
+        ],
+        "google_id": "ChIJOas4rfQUkFQR0cNpLUuOFwE",
+        "id": 25,
+        "name": "Sultan Gyros Grill",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "shade": "flourescent lighting"
+        },
+        "coords": [
+            47.6590874,
+            -122.3130196
+        ],
+        "google_id": "ChIJV5PssvQUkFQRjsfr49j5Ppo",
+        "id": 26,
+        "name": "7-Eleven",
+        "tags": {
+            "food": true,
+            "navigable without stairs": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6591327,
+            -122.3128986
+        ],
+        "google_id": "ChIJT4L6svQUkFQRIXDCv4M7rdE",
+        "id": 27,
+        "name": "Thanh Vi",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6591959,
+            -122.3128495
+        ],
+        "google_id": "ChIJlZD6svQUkFQR8YmoEwFDUW0",
+        "id": 28,
+        "name": "Thaiger Room",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "can lie down": "benches"
+        },
+        "coords": [
+            47.6592963,
+            -122.3130003
+        ],
+        "google_id": "ChIJ6_IEVsMVkFQRXby-NrHjOsk",
+        "id": 29,
+        "name": "Noodle Nation",
+        "tags": {
+            "can lie down": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6593023,
+            -122.3127675
+        ],
+        "google_id": "ChIJKRKlTIsUkFQRPOJ_T-xtX0o",
+        "id": 30,
+        "name": "A Burger Place",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6596712,
+            -122.3133757
+        ],
+        "google_id": "ChIJaWm_WPMUkFQRIJUwFMf9aec",
+        "id": 31,
+        "name": "Flowers Bar & Restaurant",
+        "tags": {
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6594176,
+            -122.313422
+        ],
+        "google_id": "ChIJJ8wyS4sUkFQRgDjhdFMqI8A",
+        "id": 32,
+        "name": "China First",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "can lie down": "a couple benches"
+        },
+        "coords": [
+            47.6593456,
+            -122.3134032
+        ],
+        "google_id": "ChIJv5PstPQUkFQRsJD8IFpD9Bs",
+        "id": 33,
+        "name": "Pho Shizzle",
+        "tags": {
+            "can lie down": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6592399,
+            -122.3134022
+        ],
+        "google_id": "ChIJ9yhJrvQUkFQRbsWNMgL3lhE",
+        "id": 34,
+        "name": "Chipotle Mexican Grill",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6589834,
+            -122.3135166
+        ],
+        "google_id": "ChIJUSS8sfQUkFQRoFJTymY5_VU",
+        "id": 35,
+        "name": "BB's Teriyaki Grill",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "private/enclosed spaces": "enclosed booths"
+        },
+        "coords": [
+            47.658867,
+            -122.31339
+        ],
+        "google_id": "ChIJAwwZrvQUkFQRu6zb8LQWYig",
+        "id": 36,
+        "name": "Finn MacCool\u2019s Irish Public House",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "can lie down": "booths"
+        },
+        "coords": [
+            47.6588062,
+            -122.3133856
+        ],
+        "google_id": "ChIJiUHHrjwVkFQRGMBc1vph69c",
+        "id": 37,
+        "name": "Subway",
+        "tags": {
+            "can lie down": true,
+            "food": true,
+            "frequent seating": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "can lie down": "two couches",
+            "views of nature": "lots of plants inside"
+        },
+        "coords": [
+            47.6586746,
+            -122.3134706
+        ],
+        "google_id": "ChIJiwv9sVkVkFQRfSj7BPK16E8",
+        "id": 38,
+        "name": "Byrek & Baguette",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "wheelchair access": "narrow door"
+        },
+        "coords": [
+            47.6585501,
+            -122.3133669
+        ],
+        "google_id": "ChIJ1yLVqPQUkFQRY3IAaNoLO5w",
+        "id": 39,
+        "name": "Pho Than Brothers",
+        "tags": {
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.6584494,
+            -122.3134756
+        ],
+        "google_id": "ChIJbV44pvQUkFQRBuSZQ_SrifQ",
+        "id": 40,
+        "name": "Cafe on the Ave.",
+        "tags": {
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "movable tables/chairs": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    }
+]
