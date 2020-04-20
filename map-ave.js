@@ -63,7 +63,7 @@ const ALL_TAGS_GROUPED = [
 ]
 
 
-let map = L.map('map').setView([ 47.65822,-122.313383], 18)
+let map = L.map('map').setView([ 47.658436,-122.312699], 18)
 
 // Background layer
 //let basemap = L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
