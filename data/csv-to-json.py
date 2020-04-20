@@ -7,7 +7,7 @@ import json
 
 places = []
 
-with open('placecoding-round2-outdoor.csv') as csvfile:
+with open('placecoding-round2-outdoor-withfakes.csv') as csvfile:
     reader = DictReader(csvfile)
     reader_list = list(reader) #dump into dict so we can use it twice
 
@@ -44,5 +44,5 @@ with open('placecoding-round2-outdoor.csv') as csvfile:
         places.append(newplace)
 
 
-with open('placecoding-round2-outdoor.json', 'w') as fout:
+with open('placecoding-round2-outdoor-withfakes.json', 'w') as fout:
     json.dump(places, fout, indent=4, sort_keys=True)

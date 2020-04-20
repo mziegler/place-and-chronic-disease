@@ -1,0 +1,828 @@
+[
+    {
+        "comments": {
+            "benches": "Big concrete benches",
+            "comfortable seating": "A couple places with concrete benches",
+            "low vehicle traffic": "Some distant noise from the road",
+            "restrooms": "On most of Rainier Vista, buildings are not so close.",
+            "smooth surfaces": "Path is paved on lower portion, but gravel on upper part",
+            "views of nature": "Can see Mt. Rainier",
+            "views of water": "Fountain"
+        },
+        "coords": [
+            47.6522065,
+            -122.3066641
+        ],
+        "google_id": "ChIJAbqvPe0UkFQRJvSVUTJP_xg",
+        "id": 0,
+        "name": "Rainier vista",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "lawn": true,
+            "low vehicle traffic": true,
+            "open space": true,
+            "people watching": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {
+            "restrooms": true
+        }
+    },
+    {
+        "comments": {
+            "benches": "The metal benches have dividers so you can't lie down, but there are a couple wide concrete ones.",
+            "comfortable seating": "concrete and metal benches",
+            "low vehicle traffic": "Busy streets",
+            "quiet spaces": "Loud traffic",
+            "smooth surfaces": "Brick floor; most parts are in good level condition but some pots have jagged edges",
+            "views of nature": "Mt. Rainier on clear days"
+        },
+        "coords": [
+            47.65014,
+            -122.30536
+        ],
+        "google_id": "ChIJyT2BhOwUkFQRw82MJAwmZcY",
+        "id": 1,
+        "name": "Montlake Triangle",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "frequent seating": true,
+            "lawn": true,
+            "open space": true,
+            "people watching": true,
+            "seating along paths": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "accessible restrooms": "Shell house builing is only sometimes open for events. There are wide porta-potties outside the shellhouse",
+            "can lie down": "Can lie down on the docks",
+            "comfortable seating": "Nice wooden benches",
+            "navigable without hills": "Steep hill to get down to water",
+            "quiet spaces": "some highway noise",
+            "restrooms": "Shell house builing is only sometimes open for events. There are wide porta-potties outside the shellhouse",
+            "single stall restrooms": "Wide porta-potties",
+            "smooth surfaces": "Paved paths throughout, but with rough conditions in some spots",
+            "wheelchair access": "Paved paths throughout, but with rough conditions in some spots"
+        },
+        "coords": [
+            47.6477751,
+            -122.3000739
+        ],
+        "google_id": "ChIJv-BHxOoUkFQR7HuKcRimC-4",
+        "id": 2,
+        "name": "ASUW Shellhouse",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "comfortable seating": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "quiet spaces": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "wide path": true
+        },
+        "unsure": {
+            "accessible restrooms": true,
+            "restrooms": true,
+            "single stall restrooms": true,
+            "wheelchair access": true
+        }
+    },
+    {
+        "comments": {
+            "benches": "Benches are sparse",
+            "comfortable seating": "some nice benches",
+            "frequent seating": "benches are sparse",
+            "restrooms": "Far from buildings",
+            "smooth surfaces": "Dirth paths, many in rough condition",
+            "wheelchair access": "Dirt paths, many in rough condition"
+        },
+        "coords": [
+            47.65666,
+            -122.294192
+        ],
+        "google_id": "ChIJiYq5ipAUkFQRklJaWicPzZw",
+        "id": 3,
+        "name": "Union Bay Natural Area",
+        "tags": {
+            "comfortable seating": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "navigable without stairs": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "shade": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "comfortable seating": "picnic tables with little seats",
+            "low pedestrian traffic": "Bike path",
+            "low vehicle traffic": "Adjacent to high-traffic roads",
+            "quiet spaces": "Traffic noise",
+            "smooth surfaces": "bike path"
+        },
+        "coords": [
+            47.653927,
+            -122.3142285
+        ],
+        "google_id": "",
+        "id": 4,
+        "name": "Little bike path park",
+        "tags": {
+            "frequent seating": true,
+            "lawn": true,
+            "open space": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "comfortable seating": "A coulpe concrete benches",
+            "private/enclosed spaces": "Enclosed wooden ring with a bench inside",
+            "restrooms": "Lots of nearby buildings accessable from paths",
+            "single stall restrooms": "Adjacent Oceanography building has a single-stall bathroom on 1st floor."
+        },
+        "coords": [
+            47.6521352,
+            -122.3120543
+        ],
+        "google_id": "ChIJj4KjCu4UkFQRYQmGTOdJrjw",
+        "id": 5,
+        "name": "Portage Bay Vista",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "can lie down": true,
+            "lawn": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "restrooms": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "benches": "Benches too short to lie down",
+            "quiet spaces": "Some distant highway noise",
+            "restrooms": "Agua verde has restrooms for customers",
+            "water": "For Agua Verde customers",
+            "wheelchair access": "Accessable paths currently under construction"
+        },
+        "coords": [
+            47.6516729,
+            -122.3148894
+        ],
+        "google_id": "ChIJAQDAGe4UkFQRSLAg6hqRD",
+        "id": 6,
+        "name": "Sakuma Viewpoint",
+        "tags": {
+            "accessible restrooms": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "private/enclosed spaces": true,
+            "seating along paths": true,
+            "seating in groups": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "water": true,
+            "wide path": true
+        },
+        "unsure": {
+            "quiet spaces": true,
+            "wheelchair access": true
+        }
+    },
+    {
+        "comments": {
+            "comfortable seating": "Wood and soft plastic benches with backs",
+            "navigable without hills": "Big steep hill to get to the water.",
+            "navigable without stairs": "Long steep stairway to reach the water. The accessable path is pretty inconvenient and out-of-the-way.",
+            "open space": "Open space on a hill",
+            "private/enclosed spaces": "There are a few nice areas with benches tucked into trees, but they are difficult to access with a walker or wheelchair.",
+            "quiet spaces": "Distant traffic noise",
+            "single stall restrooms": "double check",
+            "wheelchair access": "Wheelchair-accessable path to the water from the patio is inconvenient. You have to go out through the front of the building and then around to the back.",
+            "wide path": "accessable path is kind of narrow"
+        },
+        "coords": [
+            47.6495089,
+            -122.3107975
+        ],
+        "google_id": "ChIJ_dBzBewUkFQR1ymc13dvw5I",
+        "id": 7,
+        "name": "South Campus Center",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "water": true
+        },
+        "unsure": {
+            "navigable without stairs": true,
+            "wheelchair access": true,
+            "wide path": true
+        }
+    },
+    {
+        "comments": {
+            "comfortable seating": "Wood benches, with and without backrests",
+            "frequent seating": "Benches are sparse",
+            "restrooms": "Hospital facilities are not so easy to get to from the back lawn",
+            "smooth surfaces": "Dirt and gravel paths, in rough condition",
+            "wheelchair access": "Dirt and gravel paths, in rough condition"
+        },
+        "coords": [
+            47.6478067,
+            -122.3086745
+        ],
+        "google_id": "",
+        "id": 8,
+        "name": "Lawn behind hospital",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "comfortable seating": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "open space": true,
+            "quiet spaces": true,
+            "shade": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true
+        },
+        "unsure": {
+            "restrooms": true
+        }
+    },
+    {
+        "comments": {
+            "comfortable seating": "Concrete benches without backrests",
+            "lawn": "Lawn often has goose poop",
+            "quiet spaces": "Loud of quiet, depending on time of day",
+            "views of nature": "Mt. Rainier on clear days"
+        },
+        "coords": [
+            47.6538254,
+            -122.3078057
+        ],
+        "google_id": "ChIJ10HKRO0UkFQR2hiXP8GXeug",
+        "id": 9,
+        "name": "Drumheller Fountain",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "can lie down": true,
+            "food": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "views of water": true,
+            "water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {
+            "quiet spaces": true
+        }
+    },
+    {
+        "comments": {
+            "comfortable seating": "A few wood benches",
+            "navigable without stairs": "Most entrances have stairs. Limited ramps.",
+            "quiet spaces": "Except for between classes",
+            "restrooms": "In nearby buildings",
+            "single stall restrooms": "Single-stall restrooms in Savery, Gowen, and art buildings",
+            "wheelchair access": "Limited access"
+        },
+        "coords": [
+            47.65727,
+            -122.30723
+        ],
+        "google_id": "ChIJyZAfHY0UkFQRiDI6e94dQmQ",
+        "id": 10,
+        "name": "The Quad",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "comfortable seating": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "open space": true,
+            "people watching": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true
+        },
+        "unsure": {
+            "accessible restrooms": true
+        }
+    },
+    {
+        "comments": {
+            "comfortable seating": "A bench and a swing"
+        },
+        "coords": [
+            47.655969,
+            -122.306115
+        ],
+        "google_id": "ChIJHzlbaY0UkFQRDkUlsuTiIbA",
+        "id": 11,
+        "name": "HUB Lawn",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "can lie down": true,
+            "comfortable seating": true,
+            "food": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "comfortable seating": "A wood bench",
+            "frequent seating": "Only one bench",
+            "seating along paths": "A wood bench",
+            "wheelchair access": "On pathway only"
+        },
+        "coords": [
+            47.652734,
+            -122.30631
+        ],
+        "google_id": "ChIJDxAMJe0UkFQRKxTsZ73RFSY",
+        "id": 12,
+        "name": "Sylvan Grove",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "comfortable seating": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "movable tables/chairs": true,
+            "open space": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "seating along paths": true,
+            "shade": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "comfortable seating": "Wood bench",
+            "wheelchair access": "Concrete in rough condition"
+        },
+        "coords": [
+            47.65615,
+            -122.30663
+        ],
+        "google_id": "ChIJj7cuFY0UkFQRfO7hCQwCnl0",
+        "id": 13,
+        "name": "Grieg Garden",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "comfortable seating": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {
+            "comfortable seating": "A couple wood benches",
+            "views of nature": "Lots of plants",
+            "wheelchair access": "Gravel, very narrow"
+        },
+        "coords": [
+            47.65214,
+            -122.307939
+        ],
+        "google_id": "ChIJ3T6MCu0UkFQRre3yEvDWMB8",
+        "id": 14,
+        "name": "Medicinal Herb Garden",
+        "tags": {
+            "comfortable seating": true,
+            "frequent seating": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "sun": true,
+            "views of nature": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.653409,
+            -122.311106
+        ],
+        "google_id": "",
+        "id": 15,
+        "name": "Mark McDermott Plaza",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "can lie down": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating in groups": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.655942,
+            -122.309464
+        ],
+        "google_id": "ChIJY5CLzfIUkFQRMMzwI-5SDF4",
+        "id": 16,
+        "name": "Red Square",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "single stall restrooms": true,
+            "sun": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.654715,
+            -122.312423
+        ],
+        "google_id": "",
+        "id": 17,
+        "name": "Gould Hall Courtyard",
+        "tags": {
+            "benches": true,
+            "can lie down": true,
+            "frequent seating": true,
+            "lawn": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "seating along paths": true,
+            "seating in groups": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.654411,
+            -122.309399
+        ],
+        "google_id": "",
+        "id": 18,
+        "name": "Johnson Hall Plaza",
+        "tags": {
+            "accessible restrooms": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.658071,
+            -122.31091
+        ],
+        "google_id": "ChIJKbWWtowUkFQRr7cfg9EZaLU",
+        "id": 19,
+        "name": "Parrington Lawn",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "can lie down": true,
+            "food": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "water": true,
+            "wheelchair access": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.658058,
+            -122.308259
+        ],
+        "google_id": "ChIJi8qM7owUkFQRhiy5keyKQ2c",
+        "id": 20,
+        "name": "Denny Yard",
+        "tags": {
+            "benches": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "quiet spaces": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.652272,
+            -122.305635
+        ],
+        "google_id": "",
+        "id": 21,
+        "name": "Roberts Hall Courtyard",
+        "tags": {
+            "can lie down": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "open space": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "shade": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.658322,
+            -122.304764
+        ],
+        "google_id": "ChIJF8FaSowUkFQRrct-HtgqakM",
+        "id": 22,
+        "name": "Intellectual House Courtyard",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "frequent seating": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "people watching": true,
+            "private/enclosed spaces": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "seating in groups": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.658002,
+            -122.305441
+        ],
+        "google_id": "",
+        "id": 23,
+        "name": "Music Hall Courtyard",
+        "tags": {
+            "accessible restrooms": true,
+            "benches": true,
+            "can lie down": true,
+            "lawn": true,
+            "low pedestrian traffic": true,
+            "low vehicle traffic": true,
+            "navigable without hills": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "quiet spaces": true,
+            "restrooms": true,
+            "seating along paths": true,
+            "shade": true,
+            "single stall restrooms": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "water": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    },
+    {
+        "comments": {},
+        "coords": [
+            47.656456,
+            -122.311061
+        ],
+        "google_id": "ChIJj0PyJvMUkFQRCBooWiwG2cQ",
+        "id": 24,
+        "name": "9 Spaces 9 Trees",
+        "tags": {
+            "benches": true,
+            "frequent seating": true,
+            "lawn": true,
+            "low vehicle traffic": true,
+            "navigable without stairs": true,
+            "open space": true,
+            "people watching": true,
+            "seating in groups": true,
+            "smooth surfaces": true,
+            "sun": true,
+            "views of nature": true,
+            "wheelchair access": true,
+            "wide path": true
+        },
+        "unsure": {}
+    }
+]

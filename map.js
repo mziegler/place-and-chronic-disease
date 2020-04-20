@@ -1,5 +1,5 @@
 // Path to the CSV file with coded place data
-const PLACE_DATA_FILE_PATH = 'data/placecoding-round2-outdoor.json'
+const PLACE_DATA_FILE_PATH = 'data/placecoding-round2-outdoor-withfakes.json'
 
 
 const ALL_TAGS_GROUPED = [
@@ -73,8 +73,13 @@ let map = L.map('map').setView([47.652734,-122.30631], 16)
 //}).addTo(map)
 
 
-let basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+/*let basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Esri'
+}).addTo(map)*/
+
+let basemap = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+ maxZoom: 18,
+ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map)
 
 
